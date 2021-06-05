@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+.container {
+    background: linear-gradient(to
+    top, #a6bcc4, #F1DAD3, #fffcfb);
+    height: 400px;
+    width: 400px;
+    border-radius: 100%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    overflow: hidden;
+}
+
+.moon{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #fbcbb2;
+    left: 250px;
+    bottom: 180px;
+}
+
+.moon::after {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #fcb896;
+    left: 35px;
+    bottom: 24px;
+}
+
+.moon::before {
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: #fcb896;
+    left: 20px;
+    bottom: 45px;
+}
+
+.mountain {
+    position: absolute;
+    bottom: 0;
+    left: 120px;
+    border-top: 0px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 150px solid #EC9F91;
+    border-left: 80px solid transparent;
+    z-index: 5;
+}
+
+.mountain-shadow {
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+    border-top: 0px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 150px solid #939fa5;
+    border-left: 0px solid transparent;
+    z-index: 5;
+    transform-origin: top right;
+    transform: skew(15deg);
+}
+
+.mountain-2 {
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+    border-top: 0px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 100px solid #f8b7a8;
+    border-left: 80px solid transparent;
+    z-index: 5;
+}
+
+.mountain-shadow-2 {
+    position: absolute;
+    bottom: 0;
+    left: 140px;
+    border-top: 0px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 100px solid #969696;
+    border-left: 0px solid transparent;
+    z-index: 5;
+    transform-origin: top right;
+    transform: skew(15deg);
+}
+
+.mountain-3 {
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+    border-top: 0px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 80px solid #f8b7a8;
+    border-left: 80px solid transparent;
+    z-index: 4;
+}
+
+.mountain-shadow-3 {
+    position: absolute;
+    bottom: 0;
+    left: 280px;
+    border-top: 0px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 80px solid #969696;
+    border-left: 0px solid transparent;
+    z-index: 4;
+    transform-origin: top right;
+    transform: skew(15deg);
+}
+
+.snow {
+    position: absolute;
+    bottom: -35px;
+    left: -20px;
+    border-top: 0px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 35px solid #faebaf;
+    border-left: 20px solid transparent;
+    z-index: 6;
+}
+
+.snow-shadow {
+    position: absolute;
+    bottom: -31.5px;
+    left: 0;
+    border-top: 0px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 35px solid #c7c6c2;
+    border-left: 0px solid transparent;
+    transform-origin: top right;
+    transform: skewY(-15deg);
+}
+
+.cloud {
+    width: 50px;
+    height: 20px;
+    background-color: #f0e9e5;
+    border-radius: 50px;
+    position: relative;
+    margin: 120px auto 20px;
+}
+
+/* .cloud::after, cloud::before {
+    content: "";
+    position: absolute;
+    background: #f0e9e5;
+    z-index: -1;
+} */
+
+.cloud::after {
+    content: "";
+    position: absolute;
+    background: #f0e9e5;
+    z-index: -1;
+    width: 20px;
+    height: 20px;
+    top: -11px;
+    left: 23px;
+    border-radius: 100px;
+}
+
+.cloud::before {
+    content: "";
+    position: absolute;
+    background: #f0e9e5;
+    z-index: -1;
+    width: 20px;
+    height: 20px;
+    top: -9px;
+    right: 21px;
+    border-radius: 200px;
+}
+
+.cloud-1 {
+    left: -100px;
+    top: 200px;
+}
+.cloud-2 {
+    left: -150px;
+}
+.cloud-3 {
+    left: 100px;
+    bottom: 90px;
+}
+.cloud-4 {
+    left: 170px;
+    bottom: 280px;
+}
+.cloud-5 {
+    left: 30px;
+    bottom: 420px;
+}
